@@ -1,0 +1,34 @@
+
+#my solution
+import sys
+import math
+
+n = int(input())
+m = int(input())
+next_m=m
+
+for i in range(n):
+    m = next_m
+    next_m= int(input())
+    
+    if i % 2==0:
+        print(m+next_m)
+    else:
+        print(str(m)+str(next_m))
+        
+        
+# other solution 
+n = int(input())
+m = [int(input()) for i in range(n)]
+for i in range(n):
+    if i == 0 or i % 2 == 0:
+        print(m[i] + m[i+1])
+    else:
+        print(str(m[i]) + str(m[i+1]))
+
+
+
+# other solution         
+*l, = map(int,open(0))
+for i,(a,b) in enumerate(zip(l[1::], l[2::])):
+    print(a+b if i % 2 == 0 else f"{a}{b}")
