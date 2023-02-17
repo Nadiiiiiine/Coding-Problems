@@ -1,0 +1,22 @@
+#my solution 
+import sys
+import math
+_str = input()
+
+# Write an answer using print
+print(_str[:2]*3)
+
+
+# other solution :
+
+if len(_str) < 2:
+    print( _str * 3)
+else:
+    first_two_chars = _str[:2]
+    print( first_two_chars * 3)
+    
+# other solution :    
+    if(len(_str)<2):
+    print(_str+_str+_str)
+else:
+    print(_str[0:2]+_str[0:2]+_str[0:2])
