@@ -1,0 +1,18 @@
+import sys
+import math
+
+n = int(input())
+text = input()
+
+# mysolution
+for x in range( len(text)-n+1):
+    print(text[x:x+n])
+   
+# other solution 
+for i in range(len(text)-n+1):
+    print(text[i:i+n])
+# other solution    
+for i, element in enumerate(text):
+    print(text[i:n+i])
+    if i == len(text) - n:
+        break
