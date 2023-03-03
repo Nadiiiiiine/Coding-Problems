@@ -1,0 +1,61 @@
+import sys
+import math
+
+a = int(input())
+d = int(input())
+n = int(input())
+
+print(a + (n - 1) * d)
+
+#other solution
+print(a+d*(n-1))
+
+
+#other solution in C++
+
+
+#include <iostream>
+#include <string>
+#include <vector>
+#include <algorithm>
+
+using namespace std;
+
+/**
+ * Auto-generated code below aims at helping you parse
+ * the standard input according to the problem statement.
+ **/
+
+int main()
+{
+    int a;
+    cin >> a; cin.ignore();
+    int d;
+    cin >> d; cin.ignore();
+    int n;
+    cin >> n; cin.ignore();
+
+    while( --n )
+        a += d;
+
+    cout << a << endl;
+}
+
+#other solution in PHP
+
+
+<?php
+
+fscanf(STDIN, "%d", $a);
+fscanf(STDIN, "%d", $d);
+fscanf(STDIN, "%d", $n);
+
+for($i=0;$i<$n - 1;$i++){
+    $a += $d;
+}
+
+echo $a;
+
+
+
+
