@@ -1,0 +1,13 @@
+import sys
+import math
+weather = input()
+
+s=0
+for x in weather :
+    if x== "R":
+        s+=4
+print(s)
+
+# other solution: 
+print(readline().replace(/S/g,'').length*4)
+
