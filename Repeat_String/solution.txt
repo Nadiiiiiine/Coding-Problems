@@ -1,0 +1,13 @@
+n = int(input())
+string = input()
+
+if n:print(string*n)
+else:print('empty')
+
+# other solution 
+
+if n==0:
+    print("empty")
+else:
+    for x in range(n):
+        print(string, end='')
