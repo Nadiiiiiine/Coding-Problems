@@ -1,0 +1,12 @@
+initpos, complexity = [int(i) for i in input().split()]
+movements = input().split(" ")
+directions = input()
+
+for i,d in enumerate(directions):
+    if d == "F":
+        initpos += int(movements[i])
+    elif d == "B":
+        initpos -= int(movements[i])
+    # else if d == "C": do nothing
+print(initpos)
+ 
