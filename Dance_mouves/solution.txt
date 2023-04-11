@@ -9,4 +9,15 @@ for i,d in enumerate(directions):
         initpos -= int(movements[i])
     # else if d == "C": do nothing
 print(initpos)
- 
+
+
+#other solution
+
+a=0
+p,c= [int(i)for i in input().split()]
+m=input().split()
+d=input()
+for x in range(0,len(d)):
+    if d[x]=='F':a+=int(m[x])
+    elif d[x]=='B':a-=int(m[x])
+print(p+a) 
